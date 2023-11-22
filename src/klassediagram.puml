@@ -1,0 +1,8 @@
+@startuml klassediagram
+UI -> Employee: new Employee(arg)
+Employee -> Person: new Person(arg)
+Employee <-- Person: personalia
+UI <-- Employee: arbTaker
+UI -> Employee: getX()
+UI <-- Employee: response
+@enduml
